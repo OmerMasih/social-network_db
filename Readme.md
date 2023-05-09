@@ -74,7 +74,7 @@ You can use "Insomnia Core" or "Postman" to test different API routes for "User"
 ## Demo Video
 
 Please click on the following link to see the Demo video for this project:
-[Link to Demo](https://drive.google.com/file/d/1R3rBTQNgByiyaS5gBcaPu0Gy21aXaDoX/view)
+[Link to Demo]()
 
 ## Questions
 
