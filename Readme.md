@@ -1,6 +1,6 @@
 ## Social-Newtwork_db Backend Application
 
-![GitHub license badge](https://img.shields.io/badge/license-MIT-orange.svg)
+![GitHub license badge](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Description
 
