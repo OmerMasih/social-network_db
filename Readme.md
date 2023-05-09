@@ -70,6 +70,8 @@ You can use "Insomnia Core" or "Postman" to test different API routes for "User"
 5. Delete a single data using the ID
 
 ## Screenshots
+<img width="1280" alt="Screen Shot 2023-05-09 at 1 55 14 PM" src="https://github.com/OmerMasih/social-network_db/assets/111917255/691970b3-a769-4370-b63a-5874313eeb37">
+<img width="1280" alt="Screen Shot 2023-05-09 at 1 54 46 PM" src="https://github.com/OmerMasih/social-network_db/assets/111917255/b79cb438-16be-47ac-b5ae-ccc5a524ef89">
 
 ## Demo Video
 
