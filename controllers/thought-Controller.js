@@ -23,16 +23,16 @@ const singleThought = async (req, res) => {
 
 // Sittings to create a new thought
 const newThought = async (req, res) => {
-  const { thoughtText, username, userId } = req.body;
+  const { textthought, username, userId } = req.body;
   try {
-    const addThought = await Thought.create({ thoughtText, username });
-    const updatedUser = await User.findByIdAndUpdate(
+    const addThought = await Thought.create({ textthought, username });
+    const userUpdate = await User.findByIdAndUpdate(
       userId,
       { $addToSet: { thoughts: addThought._id } },
       { new: true }
     );
 
-    res.json({ addThought, updatedUser });
+    res.json({ addThought, userUpdate });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -41,26 +41,26 @@ const newThought = async (req, res) => {
 // Sittings to get update thoughts
 const getupdateThought = async (req, res) => {
   try {
-    const updatedThought = await Thought.findByIdAndUpdate(
+    const getUpdated = await Thought.findByIdAndUpdate(
       req.params.thoughtId,
       { $set: { ...req.body } },
       { new: true }
     );
 
-    res.json(updatedThought);
+    res.json(getUpdated);
   } catch (err) {
     res.status(500).json(err);
   }
 };
 
 // Sitting to delete thought
-const getDelete = async (req, res) => {
+const getDeleteThought = async (req, res) => {
   try {
-    const deletedThought = await Thought.deleteOne({
+    const removedThought = await Thought.deleteOne({
       _id: req.params.thoughtId,
     });
 
-    res.json(deletedThought);
+    res.json(removedThought);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -71,30 +71,30 @@ const createReaction = async (req, res) => {
   const { thoughtId } = req.params;
   const { reactionBody, username } = req.body;
   try {
-    const updatedThought = await Thought.findByIdAndUpdate(
+    const getUpdated = await Thought.findByIdAndUpdate(
       thoughtId,
       { $addToSet: { reactions: { username, reactionBody } } },
       { new: true }
     );
 
-    res.json(updatedThought);
+    res.json(getUpdated);
   } catch (err) {
     res.status(500).json(err);
   }
 };
 
 // Sittingd to delete friend id from thought
-const reactionDelete = async (req, res) => {
+const removeReaction = async (req, res) => {
   const { thoughtId } = req.params;
   const { reactionId } = req.body;
   try {
-    const updatedThought = await Thought.findByIdAndUpdate(
+    const getUpdated = await Thought.findByIdAndUpdate(
       thoughtId,
       { $pull: { reactions: { reactionId } } },
       { new: true }
     );
 
-    res.json(updatedThought);
+    res.json(getUpdated);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -105,7 +105,7 @@ module.exports = {
   singleThought,
   newThought,
   getupdateThought,
-  getDelete,
+  getDeleteThought,
   createReaction,
-  reactionDelete,
+  removeReaction,
 };
