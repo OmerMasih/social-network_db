@@ -13,47 +13,47 @@ const getData = [
 const getThought = [
   {
     thoughtText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Ask not what your country can do for you, but what you can do for your country. John F. Kennedy.",
     username: "John",
   },
   {
     thoughtText:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Whenever you find yourself on the side of the majority, it is time to pause and reflect. Mark Twain.",
     username: "Tom",
   },
   {
     thoughtText:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "I’ve failed over and over and over again in my life and that is why I succeed. Michael Jordan.",
     username: "Bob",
   },
   {
     thoughtText:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "It is not whether you get knocked down, it’s whether you get up. Vince Lombardi",
     username: "Mohammad",
   },
   {
     thoughtText:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Go confidently in the direction of your dreams. Live the life you have imagined. Henry David Thoreau.",
     username: "Liz",
   },
   {
     thoughtText:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Insanity: doing the same thing over and over again and expecting different results. Albert Einstein.",
     username: "Alex",
   },
   {
     thoughtText:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "The weak can never forgive. Forgiveness is the attribute of the strong. Mahatma Gandhi.",
     username: "Masih",
   },
   {
     thoughtText:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "I have a dream that one day little black boys and girls will be holding hands with little white boys and girls. Martin Luther King",
     username: "Ronaldo",
   },
   {
     thoughtText:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "It is not in the stars to hold our destiny but in ourselves. William Shakespeare",
     username: "Michael",
   },
 ];

@@ -23,9 +23,9 @@ const singleThought = async (req, res) => {
 
 // Sittings to create a new thought
 const newThought = async (req, res) => {
-  const { textthought, username, userId } = req.body;
+  const { thoughtText, username, userId } = req.body;
   try {
-    const addThought = await Thought.create({ textthought, username });
+    const addThought = await Thought.create({ thoughtText, username });
     const userUpdate = await User.findByIdAndUpdate(
       userId,
       { $addToSet: { thoughts: addThought._id } },
